@@ -1,7 +1,7 @@
 /*
-Создайте структуру для хранения адреса. Структура должна содержать название города, улицы, номер дома, номер квартиры и индекс.
-Создайте функцию для вывода структуры на консоль.
-Протестируйте созданную функцию. Создайте в коде экземпляры структуры, передайте их в функцию и выведите на консоль получившиеся экземпляры структуры.
+Create a structure to store the address. The structure must contain the name of the city, street, house number, apartment number and zip code.
+Create a function to print the structure to the console.
+Test the created function. Create instances of the structure in code, pass them to the function, and print the resulting instances of the structure to the console.
 */
 
 #include <iostream>
@@ -12,7 +12,7 @@ struct Address
 	std::string street;
 	int house_num;
 	int flat_num;
-	int index;
+	int zip_code;
 };
 
 void printAddress(Address* address);
@@ -38,5 +38,5 @@ void printAddress(Address* address)
 	std::cout << "Улица: " << address->street << "\n";
 	std::cout << "Номер дома: " << address->house_num << "\n";
 	std::cout << "Номер квартиры: " << address->flat_num << "\n";
-	std::cout << "Индекс: " << address->index << "\n\n";
+	std::cout << "Индекс: " << address->zip_code << "\n\n";
 }

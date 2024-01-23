@@ -1,9 +1,8 @@
 /*
-Описание
-Напишите программу, которая спрашивает у пользователя номер месяца и выводит на экран название месяца, введённого пользователем.
-Если пользователь ввёл некорректный номер месяца, сообщите ему об этом.
-Спрашивайте пользователя до тех пор, пока он не введёт 0.
-Для решения задачи воспользуйтесь перечислением.
+Write a program that asks the user for the month number and displays the name of the month entered by the user.
+If the user entered an incorrect month number, inform him about it.
+Prompt the user until he enters 0.
+To solve the problem, use an enumeration.
 */
 
 

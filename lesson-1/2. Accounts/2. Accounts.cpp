@@ -1,7 +1,7 @@
 /*
-Создайте структуру для хранения информации о банковском счёте. Она должна хранить номер счёта (целое число), имя владельца (строка) и количество денег на счету (дробное число).
-Создайте функцию для изменения баланса счёта. Функция должна принимать экземпляр структуры банковского счёта и новую сумму.
-Попросите пользователя заполнить поля экземпляра структуры, сообщить новый баланс счёта и выведите обновлённый экземпляр структуры на консоль.
+Create a structure to store bank account information. It should store the account number (integer), owner name (string) and the amount of money in the account (fractional number).
+Create a function to change the account balance. The function should accept an instance of the bank account structure and the new amount.
+Ask the user to fill in the fields of the structure instance, report the new account balance, and output the updated structure instance to the console.
 */
 
 #include <iostream>
