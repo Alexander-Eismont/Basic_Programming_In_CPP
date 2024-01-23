@@ -13,20 +13,20 @@ int getNumFromUser();
 std::string chooseMonth(const int& num);
 void printResult();
 
-enum class months
+enum class Months
 {
-	JANUARY = 1,
-	FEBRUARY = 2,
-	MARCH = 3,
-	APRIL = 4,
-	MAY = 5,
-	JUNE = 6,
-	JULY = 7,
-	AUGUST = 8,
-	SEPTEMBER = 9,
-	OCTOBER = 10,
-	NOVEMBER = 11,
-	DECEMBER = 12
+	kJanuary = 1,
+	kFebruary = 2,
+	kMarch = 3,
+	kApril = 4,
+	kMay = 5,
+	kJune = 6,
+	kJuly = 7,
+	kAugust = 8,
+	kSeptember = 9,
+	kOctober = 10,
+	kNovember = 11,
+	kDecember = 12
 };
 
 
@@ -53,40 +53,40 @@ std::string chooseMonth(const int& num)
 
 	switch (num)
 	{
-	case static_cast<int>(months::JANUARY):
+	case static_cast<int>(Months::kJanuary):
 		month = "Январь";
 		break;
-	case static_cast<int>(months::FEBRUARY):
+	case static_cast<int>(Months::kFebruary):
 		month = "Февраль";
 		break;
-	case static_cast<int>(months::MARCH):
+	case static_cast<int>(Months::kMarch):
 		month = "Март";
 		break;
-	case static_cast<int>(months::APRIL):
+	case static_cast<int>(Months::kApril):
 		month = "Апрель";
 		break;
-	case static_cast<int>(months::MAY):
+	case static_cast<int>(Months::kMay):
 		month = "Май";
 		break;
-	case static_cast<int>(months::JUNE):
+	case static_cast<int>(Months::kJune):
 		month = "Июнь";
 		break;
-	case static_cast<int>(months::JULY):
+	case static_cast<int>(Months::kJuly):
 		month = "Июль";
 		break;
-	case static_cast<int>(months::AUGUST):
+	case static_cast<int>(Months::kAugust):
 		month = "Август";
 		break;
-	case static_cast<int>(months::SEPTEMBER):
+	case static_cast<int>(Months::kSeptember):
 		month = "Сентябрь";
 		break;
-	case static_cast<int>(months::OCTOBER):
+	case static_cast<int>(Months::kOctober):
 		month = "Октябрь";
 		break;
-	case static_cast<int>(months::NOVEMBER):
+	case static_cast<int>(Months::kNovember):
 		month = "Ноябрь";
 		break;
-	case static_cast<int>(months::DECEMBER):
+	case static_cast<int>(Months::kDecember):
 		month = "Декабрь";
 		break;
 	default:
