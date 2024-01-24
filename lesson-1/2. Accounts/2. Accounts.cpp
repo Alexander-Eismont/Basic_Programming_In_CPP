@@ -15,7 +15,8 @@ struct Account
 };
 
 Account getInfoFromUser();
-void newBalance(Account* account);
+double newBalance();
+void updateUserInfo(double& new_balance, Account* account);
 void printInfo(Account account);
 
 int main()
@@ -24,8 +25,9 @@ int main()
     SetConsoleOutputCP(1251);
 
     Account account = getInfoFromUser();
-
-    newBalance(&account);
+    double new_balance = newBalance();
+    
+    updateUserInfo(new_balance, &account);
 
     printInfo(account);
     
@@ -34,7 +36,7 @@ int main()
 
 Account getInfoFromUser()
 {
-    Account information = {};
+    Account information;
 
     std::cout << "¬ведите номер счета: ";
     std::cin >> information.account_number;
@@ -48,10 +50,19 @@ Account getInfoFromUser()
     return information;
 }
 
-void newBalance(Account* account)
+double newBalance()
 {
     std::cout << "¬ведите новый баланс: ";
-    std::cin >> account->amount_of_money;
+
+    double balance;
+    std::cin >> balance;
+
+    return balance;
+}
+
+void updateUserInfo(double& new_balance, Account* account)
+{
+    account->amount_of_money = new_balance;
 }
 
 void printInfo(Account account)
