@@ -48,44 +48,46 @@ int getNumFromUser()
 
 std::string chooseMonth(const int& num)
 {
+	Months mon = static_cast<Months>(num);
+
 	std::string month;
 
-	switch (num)
+	switch (mon)
 	{
-	case static_cast<int>(Months::kJanuary):
+	case Months::kJanuary:
 		month = "Январь";
 		break;
-	case static_cast<int>(Months::kFebruary):
+	case Months::kFebruary:
 		month = "Февраль";
 		break;
-	case static_cast<int>(Months::kMarch):
+	case Months::kMarch:
 		month = "Март";
 		break;
-	case static_cast<int>(Months::kApril):
+	case Months::kApril:
 		month = "Апрель";
 		break;
-	case static_cast<int>(Months::kMay):
+	case Months::kMay:
 		month = "Май";
 		break;
-	case static_cast<int>(Months::kJune):
+	case Months::kJune:
 		month = "Июнь";
 		break;
-	case static_cast<int>(Months::kJuly):
+	case Months::kJuly:
 		month = "Июль";
 		break;
-	case static_cast<int>(Months::kAugust):
+	case Months::kAugust:
 		month = "Август";
 		break;
-	case static_cast<int>(Months::kSeptember):
+	case Months::kSeptember:
 		month = "Сентябрь";
 		break;
-	case static_cast<int>(Months::kOctober):
+	case Months::kOctober:
 		month = "Октябрь";
 		break;
-	case static_cast<int>(Months::kNovember):
+	case Months::kNovember:
 		month = "Ноябрь";
 		break;
-	case static_cast<int>(Months::kDecember):
+	case Months::kDecember:
 		month = "Декабрь";
 		break;
 	default:
