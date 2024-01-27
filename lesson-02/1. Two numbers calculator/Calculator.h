@@ -7,7 +7,6 @@ private:
 	double m_num1;
 	double m_num2;
 
-
 public:
 	Calculator(double num1, double num2);
 

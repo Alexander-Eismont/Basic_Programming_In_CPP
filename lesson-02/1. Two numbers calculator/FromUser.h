@@ -8,8 +8,6 @@ private:
 	char m_symb;
 
 public:
-	
-
 	double getDoubleFromUser();
 
 	char getSymbFromUser();
