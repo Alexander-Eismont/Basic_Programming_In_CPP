@@ -4,7 +4,8 @@
 Address::Address(const std::string& city, const std::string& street, int house, int flat)
 	: m_city{ city }, m_street{ street }, m_house{ house }, m_flat{ flat } {}
 
-Address::Address() {}
+Address::Address()
+	: m_house{ 0 }, m_flat{ 0 } {}
 
 void Address::printAddress(std::ofstream& output_line)
 {
