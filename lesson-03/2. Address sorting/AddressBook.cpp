@@ -19,6 +19,12 @@ void AddressBook::readFromFile(const std::string& filename)
 
 	input_file >> m_size;
 
+	if (input_file.fail())
+	{
+		std::cout << "Error reading size from input file!\n";
+		return;
+	}
+
 	m_addresses.resize(m_size);
 
 	for (int i{ 0 }; i < m_size; i++)

@@ -7,7 +7,7 @@ int main()
 	std::string filename_in{ "in.txt" };
 	std::string filename_out{ "out.txt" };
 
-	AddressBook address_book(0, std::vector<Address>());
+	AddressBook address_book(0, {});
 
 	address_book.readFromFile(filename_in);
 
