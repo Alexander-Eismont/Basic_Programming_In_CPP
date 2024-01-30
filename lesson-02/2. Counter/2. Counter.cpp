@@ -8,6 +8,8 @@ private:
 public:
 	Counter() { m_num = 1; }
 
+	Counter(int num) :m_num{ num } {}
+
 	int increaseByOne() { return m_num++; }
 
 	int decreaseByOne() { return m_num--; }
@@ -33,7 +35,7 @@ int main()
 	{
 		std::cout << "Enter the initial counter value: ";
 		std::cin >> num;
-		counter.setNum(num);
+		counter = Counter(num);
 	}
 
 	do
