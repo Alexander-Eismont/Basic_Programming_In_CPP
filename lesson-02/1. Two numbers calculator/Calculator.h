@@ -8,7 +8,7 @@ private:
 	double m_num2;
 
 public:
-	Calculator(double num1, double num2);
+	Calculator();
 
 	double add();
 	double subtract1_2();
@@ -17,8 +17,8 @@ public:
 	double divide1_2();
 	double divide2_1();
 
-	bool setNum1();
-	bool setNum2();
+	bool setNum1(double num);
+	bool setNum2(double num);
 };
 
 #endif
