@@ -1,6 +1,7 @@
 Debug/
 x64/
 .vs/
+.vscode/
 
 *.sln
 *.vcxproj
