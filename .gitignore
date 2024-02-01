@@ -2,8 +2,10 @@ Debug/
 x64/
 .vs/
 .vscode/
+build*/
 
-*.sln
-*.vcxproj
+.sln
+.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
+CMakeLists.txt.user
