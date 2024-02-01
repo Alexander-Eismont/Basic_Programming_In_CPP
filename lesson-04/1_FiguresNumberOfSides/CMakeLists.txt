@@ -14,6 +14,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(1_FiguresNumberOfSides
   main.cpp
+  shapes.h shapes.cpp
 
 )
 target_link_libraries(1_FiguresNumberOfSides Qt${QT_VERSION_MAJOR}::Core)
