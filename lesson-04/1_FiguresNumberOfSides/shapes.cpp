@@ -15,10 +15,10 @@ std::string Figure::getName()
     return m_name;
 }
 
-Triangle::Triangle(int sides_count, std::string name)
-    : Figure(sides_count, name)
+Triangle::Triangle()
+    : Figure(3, "Triangle")
 {}
 
-Quadrangle::Quadrangle(int sides_count, std::string name)
-    : Figure(sides_count, name)
+Quadrangle::Quadrangle()
+    : Figure(4, "Quadrangle")
 {}

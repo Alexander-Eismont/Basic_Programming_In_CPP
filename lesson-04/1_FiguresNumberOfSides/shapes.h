@@ -20,13 +20,13 @@ public:
 class Triangle : public Figure
 {
 public:
-    Triangle(int sides_count = 3, std::string name = "Triangle");
+    Triangle();
 };
 
 class Quadrangle : public Figure
 {
 public:
-    Quadrangle(int sides_count = 4, std::string name = "Quadrangle");
+    Quadrangle();
 };
 
 #endif // SHAPES_H
