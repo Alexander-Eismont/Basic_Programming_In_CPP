@@ -29,3 +29,37 @@ Task: design and implement classes that describe the subject area. Demonstrate t
 Initialization of side lengths and angle values must be done by calling base constructors.
 
 To print information about a shape, create a `print_info` function that takes as an argument a pointer to the base class of the shape.
+
+### 3. Shapes. Methods
+In this assignment you will add more functionality to your class hierarchy.
+
+Your shapes should now be able to do a little more:
+- display information about yourself;
+- check the accuracy of your data.
+
+Your figures:
+- figure (number of sides is 0);
+- triangle (the sides and angles are arbitrary, the number of sides is 3, the sum of the angles is 180);
+- right triangle (angle `C` is always 90);
+- isosceles triangle (sides `a` and `c` are equal, angles `A` and `C` are equal);
+- equilateral triangle (all sides are equal, all angles are equal to 60);
+- quadrilateral (the sides and angles are arbitrary, the number of sides is 4, the sum of the angles is 360);
+- rectangle (sides `a`,`c` and `b`,`d` are equal in pairs, all angles are equal to 90);
+- square (all sides are equal, all angles are 90);
+- parallelogram (sides `a`,`c` and `b`,`d` are equal in pairs, angles `A`,`C` and `B`,`D` are equal in pairs);
+- rhombus (all sides are equal, angles `A`, `C` and `B`, `D` are equal in pairs).
+
+You should be able to ask the figure to print information about itself to the console, and also know if the figure is valid, that is, if the conditions specified in the list above are met.
+
+Figure information includes:
+- name of the figure;
+- number of sides;
+- the lengths of its sides, if any;
+- the magnitude of its angles, if any;
+- whether the figure is correct.
+
+Task: design and implement classes that describe the subject area. Demonstrate how they work: Create one instance of each shape and display information about the shapes.
+
+Implement console output and figure validation methods using virtual functions and overrides. Use a call to the base version of the method.
+
+Your task is to work with instances of child classes polymorphically, that is, using a pointer to the base class.
