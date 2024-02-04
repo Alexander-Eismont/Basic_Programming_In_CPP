@@ -5,7 +5,7 @@ Lessons:
 - [x] Lesson 01 - Structures and enum
 - [x] Lesson 02 - Classes and objects
 - [x] Lesson 03 - OOP: abstraction and encapsulation
-- [ ] Lesson 04 - OOP: inheritance and polymorphism
+- [x] Lesson 04 - OOP: inheritance and polymorphism
 - [ ] Lesson 05 - Multi-file projects and libraries
 - [ ] Lesson 06 - Preprocessor and macros
 - [ ] Lesson 07 - Exceptions and Error Handling
