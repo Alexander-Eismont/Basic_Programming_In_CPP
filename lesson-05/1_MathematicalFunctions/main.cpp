@@ -4,27 +4,27 @@
 
 int main()
 {
-    FromUser fromUser;
+	FromUser fromUser;
 
-    std::cout << "Input first num: ";
-    double num1{ fromUser.getNumFromUser() };
+	std::cout << "Input first num: ";
+	double num1{ fromUser.getNumFromUser() };
 
-    std::cout << "Input second num: ";
-    double num2{ fromUser.getNumFromUser() };
+	std::cout << "Input second num: ";
+	double num2{ fromUser.getNumFromUser() };
 
-    std::cout << "Input operation ('+' - addition, '-' - subtration, '*' - multipliation, '/' - "
-        "division, '^' - exponentiation): ";
-    char sign{ fromUser.getSymbolFromUser() };
+	std::cout << "Input operation ('+' - addition, '-' - subtration, \'*' - multipliation, "
+		"'/' - division, '^' - exponentiation): ";
+	char sign{ fromUser.getSymbolFromUser() };
 
-    if (sign == '/' && num2 == 0)
-    {
-        std::cout << "Cannot division by 0\n";
-        return -1;
-    }
+	if (sign == '/' && num2 == 0)
+	{
+		std::cout << "Cannot division by 0\n";
+		return -1;
+	}
 
-    Math math(num1, num2, sign);
+	Math math(num1, num2, sign);
 
-    math.calculateResult();
+	math.calculateResult();
 
-    return 0;
+	return 0;
 }
