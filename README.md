@@ -6,7 +6,7 @@ Lessons:
 - [x] Lesson 02 - Classes and objects
 - [x] Lesson 03 - OOP: abstraction and encapsulation
 - [x] Lesson 04 - OOP: inheritance and polymorphism
-- [ ] Lesson 05 - Multi-file projects and libraries
+- [x] Lesson 05 - Multi-file projects and libraries
 - [ ] Lesson 06 - Preprocessor and macros
 - [ ] Lesson 07 - Exceptions and Error Handling
 - [ ] Lesson 08 - Operator overloading
