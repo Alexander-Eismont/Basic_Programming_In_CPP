@@ -3,8 +3,8 @@
 int getStringLength(std::string str, int forbiddenLength)
 {
     if (str.length() == forbiddenLength)
-        throw std::string{"You have entered a word of prohibited length! "
-                          "Goodbye"};
+        throw std::length_error(
+            "You have entered a word of prohibited length! Goodbye!");
 
     return str.length();
 }
@@ -24,12 +24,13 @@ int main()
             std::cin >> str;
 
             getStringLength(str, stringLength);
-            std::cout << "The length of the string \"" << str << "\" is " << str.length() << "\n";
+            std::cout << "The length of the string \"" << str << "\" is "
+                      << str.length() << "\n";
         }
     }
-    catch (std::string errorMessage)
+    catch (std::exception& error)
     {
-        std::cerr << errorMessage << "\n";
+        std::cerr << error.what() << "\n";
     }
 
     return 0;
