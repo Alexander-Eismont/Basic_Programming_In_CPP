@@ -5,7 +5,7 @@
 class Triangle : public Figure
 {
 public:
-    Triangle();
+    Triangle(std::vector<int> sides, std::vector<int> angles);
 
     bool isCountSidesValid() const;
     bool isSidesLengthValid() const;

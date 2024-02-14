@@ -2,12 +2,10 @@
 #include "geometryException.h"
 #include <iostream>
 
-Triangle::Triangle()
-    : Figure()
+Triangle::Triangle(std::vector<int> sides, std::vector<int> angles)
+    : Figure(sides, angles)
 {
     m_figureName = "Triangle";
-    m_sides = {2, 2, 3};
-    m_angles = {0, 70, 50};
 
     if (!isCountSidesValid())
         throw GeometryException("Wrong number of sides!");

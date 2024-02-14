@@ -5,12 +5,9 @@
 class RightTriangle : public Triangle
 {
 public:
-    RightTriangle();
+    RightTriangle(std::vector<int> sides, std::vector<int> angles);
 
     bool isThirdAngleRight() const;
-    bool isCountSidesValid() const;
-    bool isSidesLengthValid() const;
-    bool isAnglesSumValid() const;
 
     void printFigureInfo() const override;
 };

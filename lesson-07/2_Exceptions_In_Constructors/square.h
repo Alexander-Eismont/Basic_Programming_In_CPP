@@ -5,12 +5,10 @@
 class Square : public Rectangle
 {
 public:
-    Square();
+    Square(std::vector<int> sides, std::vector<int> angles);
 
     bool isAllSidesEqual() const;
     bool isAnglesEqual() const;
-    bool isCountSidesValid() const;
-    bool isAnglesSumValid() const;
 
     void printFigureInfo() const override;
 };

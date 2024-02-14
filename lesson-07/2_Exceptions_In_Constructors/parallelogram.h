@@ -5,12 +5,10 @@
 class Parallelogram : public Quadrangle
 {
 public:
-    Parallelogram();
+    Parallelogram(std::vector<int> sides, std::vector<int> angles);
 
     bool isOppositeAnglesEqual() const;
     bool isSumAnglesOneSideValid() const;
-    bool isCountSidesValid() const;
-    bool isAnglesSumValid() const;
 
     void printFigureInfo() const override;
 };

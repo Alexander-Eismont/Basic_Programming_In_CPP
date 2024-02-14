@@ -1,12 +1,10 @@
 #include "quadrangle.h"
 #include "geometryException.h"
 
-Quadrangle::Quadrangle()
-    : Figure()
+Quadrangle::Quadrangle(std::vector<int> sides, std::vector<int> angles)
+    : Figure(sides, angles)
 {
     m_figureName = "Quadrangle";
-    m_sides = {2, 3, 3, 1};
-    m_angles = {60, 40, 100, 160};
 
     if (!isCountSidesValid())
         throw GeometryException("Wrong number of sides!");

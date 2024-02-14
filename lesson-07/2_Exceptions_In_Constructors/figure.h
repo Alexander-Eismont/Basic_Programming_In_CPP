@@ -10,9 +10,9 @@ protected:
     std::vector<int> m_sides;
     std::vector<int> m_angles;
 
-public:
-    Figure();
+    Figure(std::vector<int>& sides, std::vector<int>& angles);
 
+public:
     std::string getFigureName() const;
     std::vector<int> getSides() const;
     std::vector<int> getAngles() const;

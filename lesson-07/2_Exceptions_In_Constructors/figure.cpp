@@ -1,7 +1,10 @@
 #include "figure.h"
 #include <iostream>
 
-Figure::Figure() {}
+Figure::Figure(std::vector<int>& sides, std::vector<int>& angles)
+    : m_sides{sides}
+    , m_angles{angles}
+{}
 
 std::string Figure::getFigureName() const { return m_figureName; }
 

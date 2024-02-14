@@ -13,19 +13,19 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(2_Exceptions_In_Constructors
-  main.cpp
-  equilateralTriangle.h equilateralTriangle.cpp
-  figure.h figure.cpp
-  isoscelesTriangle.h isoscelesTriangle.cpp
-  parallelogram.h parallelogram.cpp
-  quadrangle.h quadrangle.cpp
-  rectangle.h rectangle.cpp
-  rhombus.h rhombus.cpp
-  rightTriangle.h rightTriangle.cpp
-  square.h square.cpp
-  triangle.h triangle.cpp
-  geometryException.h
-  createShapes.h createShapes.cpp
+    main.cpp
+    equilateralTriangle.h equilateralTriangle.cpp
+    figure.h figure.cpp
+    isoscelesTriangle.h isoscelesTriangle.cpp
+    parallelogram.h parallelogram.cpp
+    quadrangle.h quadrangle.cpp
+    rectangle.h rectangle.cpp
+    rhombus.h rhombus.cpp
+    rightTriangle.h rightTriangle.cpp
+    square.h square.cpp
+    triangle.h triangle.cpp
+    geometryException.h
+    createShapes.h createShapes.cpp
 )
 target_link_libraries(2_Exceptions_In_Constructors Qt${QT_VERSION_MAJOR}::Core)
 

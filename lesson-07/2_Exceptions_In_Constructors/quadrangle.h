@@ -5,7 +5,7 @@
 class Quadrangle : public Figure
 {
 public:
-    Quadrangle();
+    Quadrangle(std::vector<int> sides, std::vector<int> angles);
 
     bool isCountSidesValid() const;
     bool isAnglesSumValid() const;

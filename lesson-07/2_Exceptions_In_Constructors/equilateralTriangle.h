@@ -5,13 +5,10 @@
 class EquilateralTriangle : public Triangle
 {
 public:
-    EquilateralTriangle();
+    EquilateralTriangle(std::vector<int> sides, std::vector<int> angles);
 
     bool isAllAnglesEqual() const;
     bool isAllSidesEqual() const;
-    bool isCountSidesValid() const;
-    bool isSidesLengthValid() const;
-    bool isAnglesSumValid() const;
 
     void printFigureInfo() const override;
 };
