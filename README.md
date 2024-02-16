@@ -8,7 +8,7 @@ Lessons:
 - [x] Lesson 04 - OOP: inheritance and polymorphism
 - [x] Lesson 05 - Multi-file projects and libraries
 - [x] Lesson 06 - Preprocessor and macros
-- [ ] Lesson 07 - Exceptions and Error Handling
+- [x] Lesson 07 - Exceptions and Error Handling
 - [ ] Lesson 08 - Operator overloading
 - [ ] Lesson 09 - CMake
 - [ ] Lesson 10 - Building and connecting libraries
