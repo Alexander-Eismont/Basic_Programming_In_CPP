@@ -25,19 +25,51 @@ public:
         denominator_ = denominator;
     }
 
-    friend bool operator<=>(const Fraction& f1, const Fraction& f2);
-    friend bool operator==(const Fraction& f1, const Fraction& f2);
+    /*
+    The operators (> and <=) and (< and >=) are logical opposites, so one could
+    be defined in terms of the other. But for practice and understanding,
+    all comparison operators were redefined through class methods,
+    and not through friendly functions
+    */
+    bool operator>(const Fraction& frac)
+    {
+        return numerator_ * frac.denominator_ > frac.numerator_ * denominator_;
+    }
+
+    bool operator>=(const Fraction& frac)
+    {
+        return numerator_ * frac.denominator_ >= frac.numerator_ * denominator_;
+    }
+
+    bool operator<(const Fraction& frac)
+    {
+        return numerator_ * frac.denominator_ < frac.numerator_ * denominator_;
+    }
+
+    bool operator<=(const Fraction& frac)
+    {
+        return numerator_ * frac.denominator_ <= frac.numerator_ * denominator_;
+    }
+
+    bool operator==(const Fraction& frac)
+    {
+        return numerator_ * frac.denominator_ == frac.numerator_ * denominator_;
+    }
+
+    bool operator!=(const Fraction& frac)
+    {
+        return numerator_ * frac.denominator_ != frac.numerator_ * denominator_;
+    }
+
+    // friend bool operator<=>(const Fraction& f1, const Fraction& f2);
 };
 
+/*
 bool operator<=>(const Fraction& f1, const Fraction& f2)
 {
     return f1.numerator_ * f2.denominator_ > f2.numerator_ * f1.denominator_;
 }
-
-bool operator==(const Fraction& f1, const Fraction& f2)
-{
-    return f1.numerator_ * f2.denominator_ == f2.numerator_ * f1.denominator_;
-}
+*/
 
 int main()
 {
