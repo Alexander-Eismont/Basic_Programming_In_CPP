@@ -11,6 +11,10 @@ public:
     {
         numerator_ = numerator;
         denominator_ = denominator;
+
+        // We put a reduce() method in the constructor to make sure that
+        // all fractions are reduced
+        reduce();
     }
 
     Fraction operator+(const Fraction& frac)
@@ -44,10 +48,36 @@ public:
         return Fraction(numerator_ + denominator_, denominator_);
     }
 
+    Fraction operator--()
+    {
+        return Fraction(numerator_ - denominator_, denominator_);
+    }
+
+    Fraction& operator++(int)
+    {
+        numerator_ += denominator_;
+        return *this;
+    }
+
     Fraction& operator--(int)
     {
         numerator_ -= denominator_;
         return *this;
+    }
+
+    // We make the nod() function static so that it can be part of
+    // the Fraction class and at the same time, to use it, it would not be
+    // necessary to create an object of the Fraction class
+    static int greatestCommonDivisor(int a, int b)
+    {
+        return b == 0 ? a : greatestCommonDivisor(b, a % b);
+    }
+
+    void reduce()
+    {
+        int commonDivisor = greatestCommonDivisor(numerator_, denominator_);
+        numerator_ /= commonDivisor;
+        denominator_ /= commonDivisor;
     }
 
     friend std::ostream& operator<<(std::ostream& out, const Fraction& frac);
