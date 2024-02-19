@@ -9,7 +9,7 @@ Lessons:
 - [x] Lesson 05 - Multi-file projects and libraries
 - [x] Lesson 06 - Preprocessor and macros
 - [x] Lesson 07 - Exceptions and Error Handling
-- [ ] Lesson 08 - Operator overloading
+- [x] Lesson 08 - Operator overloading
 - [ ] Lesson 09 - CMake
 - [ ] Lesson 10 - Building and connecting libraries
 - [ ] Lesson 11 - Final work “Racing simulator”
