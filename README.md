@@ -10,6 +10,6 @@ Lessons:
 - [x] Lesson 06 - Preprocessor and macros
 - [x] Lesson 07 - Exceptions and Error Handling
 - [x] Lesson 08 - Operator overloading
-- [ ] Lesson 09 - CMake
+- [x] Lesson 09 - CMake
 - [ ] Lesson 10 - Building and connecting libraries
 - [ ] Lesson 11 - Final work “Racing simulator”
