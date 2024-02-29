@@ -20,5 +20,7 @@ int main()
 
 	std::cout << leaver.leave(getName()) << "\n";
 
+    system("pause");
+
 	return 0;
 }
