@@ -1,12 +1,12 @@
-#include "Triangle.h"
-#include "RightTriangle.h"
-#include "IsoscelesTriangle.h"
-#include "EquilateralTriangle.h"
-#include "Quadrangle.h"
-#include "Parallelogram.h"
-#include "Rectangle.h"
-#include "Rhombus.h"
-#include "Square.h"
+#include "../TriangleLib/Triangle.h"
+#include "../TriangleLib/RightTriangle.h"
+#include "../TriangleLib/IsoscelesTriangle.h"
+#include "../TriangleLib/EquilateralTriangle.h"
+#include "../QuadrangleLib/Quadrangle.h"
+#include "../QuadrangleLib/Parallelogram.h"
+#include "../QuadrangleLib/Rectangle.h"
+#include "../QuadrangleLib/Rhombus.h"
+#include "../QuadrangleLib/Square.h"
 
 int main()
 {

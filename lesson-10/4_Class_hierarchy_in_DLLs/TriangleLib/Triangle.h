@@ -1,6 +1,6 @@
 #pragma once
 
-#include "figure.h"
+#include "../FigureLib/Figure.h"
 
 #ifdef TRIANGLELIB_EXPORTS
 #define TRIANGLELIB_API __declspec(dllexport)
