@@ -37,5 +37,7 @@ int main()
     Square square;
     square.printFigureInfo();
 
+    system("pause");
+
     return 0;
 }
