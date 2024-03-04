@@ -3,6 +3,8 @@ x64/
 .vs/
 .vscode/
 build*/
+bin*/
+lib*/
 lesson*/**/.gitignore
 
 .sln
@@ -10,3 +12,4 @@ lesson*/**/.gitignore
 *.vcxproj.filters
 *.vcxproj.user
 CMakeLists.txt.user
+*.json

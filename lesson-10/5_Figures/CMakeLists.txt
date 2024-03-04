@@ -7,20 +7,18 @@ project(Figures)
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
-#set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../lib/)
-#set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ../lib/)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin/)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../../bin/)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../../bin/)
+set(EXECUTABLE_OUTPUT_PATH ../../bin/)
 
-include_directories(Shapes)
-include_directories(FigureLib)
-include_directories(QuadrangleLib)
-include_directories(TriangleLib)
+include_directories(Figure/include)
+include_directories(Triangles/include)
+include_directories(Quadrangles/include)
 
 add_executable(Figures Figures.cpp)
 
-add_subdirectory(Shapes)
-add_subdirectory(FigureLib)
-add_subdirectory(QuadrangleLib)
-add_subdirectory(TriangleLib)
+add_subdirectory(Figure)
+add_subdirectory(Quadrangles)
+add_subdirectory(Triangles)
 
-target_link_libraries(Figures Shapes FigureLib QuadrangleLib TriangleLib)
+target_link_libraries(Figures FigureLib QuadrangleLib TriangleLib)
