@@ -11,5 +11,5 @@ Lessons:
 - [x] Lesson 07 - Exceptions and Error Handling
 - [x] Lesson 08 - Operator overloading
 - [x] Lesson 09 - CMake
-- [ ] Lesson 10 - Building and connecting libraries
+- [x] Lesson 10 - Building and connecting libraries
 - [ ] Lesson 11 - Final work “Racing simulator”
