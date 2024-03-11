@@ -12,4 +12,4 @@ Lessons:
 - [x] Lesson 08 - Operator overloading
 - [x] Lesson 09 - CMake
 - [x] Lesson 10 - Building and connecting libraries
-- [ ] Lesson 11 - Final work “Racing simulator”
+- [x] [Final work “Racing simulator”](https://github.com/Alexander-Eismont/Final_works/tree/main/Racing%20Simulator)
